@@ -17,19 +17,19 @@ document.getElementById("whatsapp1").addEventListener("click", function() {
 //Agregar Contacto
 document.getElementById("btnContacto").addEventListener("click", function() {
     let vcard = `BEGIN:VCARD
-                VERSION:3.0
-                FN:Lic. Julio Morales
-                ORG:M&P Consorcio Legal
-                TEL;TYPE=CELL:+50259958008
-                EMAIL:juliomorales2002@gmail.com
-                END:VCARD`;
+VERSION:3.0
+FN:Lic. Julio Morales
+TEL;TYPE=CELL:+50259958008
+EMAIL:juliomorales2002@gmail.com
+END:VCARD`;
+
 
     let blob = new Blob([vcard], { type: "text/vcard" });
     let url = URL.createObjectURL(blob);
 
     let a = document.createElement("a");
     a.href = url;
-    a.download = "Lic.JulioMorales.vcf"; 
+    a.download = "LicJulioMorales.vcf"; 
     a.click();
 
     URL.revokeObjectURL(url);
