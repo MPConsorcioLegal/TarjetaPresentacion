@@ -637,9 +637,29 @@ nav a:hover {
 }
 
 #direccion {
+    height: 100%;
     padding-left: 10%;
     grid-column: 2;
     grid-row: 2;
+}
+
+#direccion > ul > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#direccion > ul > div > button{
+    padding: 5%;
+    border: none;
+    background-color: inherit;
+    z-index: 1000;
+    margin-left: 10%;
+}
+
+#direccion > ul > div > button > img{
+    width: 90px;
+    border-radius: 15px;
+    
 }
 
 #numcel_correo {
@@ -1140,6 +1160,10 @@ nav a:hover {
         height: auto;
         margin: 0 auto;
         border-radius: 10px;
+    }
+
+    #direccion > ul > div > button{
+        margin-left: 5%;
     }
 
      #num_correo {
