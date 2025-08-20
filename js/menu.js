@@ -20,7 +20,7 @@ document.getElementById("btnContacto").addEventListener("click", function() {
 VERSION:3.0
 FN:Lic. Julio Morales
 TEL;TYPE=CELL:+50259958008
-EMAIL:juliomorales2002@gmail.com
+EMAIL:jmoralesconsorciolegalmp@gmail.com
 END:VCARD`;
 
 
